@@ -1,17 +1,19 @@
-//
-//  YQAppDelegate.m
-//  YQMediator
-//
-//  Created by gyq19900513@126.com on 04/07/2018.
-//  Copyright (c) 2018 gyq19900513@126.com. All rights reserved.
-//
-
 #import "YQAppDelegate.h"
+#import "YQMediator.h"
 
 @implementation YQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSURL *url1 = [NSURL URLWithString:@"YQScheme://YQViewControllerA"];
+    UIViewController *vcA = [YQMediator viewControllerForURL:url1 withBlock:^(id  _Nullable returnVal, BOOL isConnect) {
+        NSLog(@"%@",returnVal);
+    }];
+    self.nav = [[UINavigationController alloc] initWithRootViewController:vcA];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.nav;
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

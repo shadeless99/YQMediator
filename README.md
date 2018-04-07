@@ -22,7 +22,7 @@ pod 'YQMediator'
 
 ## Author
 
-gyq19900513@126.com, yongqing3@staff.sina.com.cn
+shadeless99, shadeless@126.com
 
 ## License
 

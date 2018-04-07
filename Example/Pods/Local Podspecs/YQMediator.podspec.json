@@ -1,0 +1,22 @@
+{
+  "name": "YQMediator",
+  "version": "0.0.1",
+  "summary": "组件跳转中间件",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shadeless99/YQMediator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shadeless99": "shadeless@126.com"
+  },
+  "source": {
+    "git": "https://github.com/shadeless99/YQMediator.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YQMediator/Classes/**/*"
+}

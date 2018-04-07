@@ -1,0 +1,6 @@
+framework module YQMediator {
+  umbrella header "YQMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}
