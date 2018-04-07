@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YQMediator_Example' do
+  pod 'YQMediator', :path => '../'
+
+  target 'YQMediator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
