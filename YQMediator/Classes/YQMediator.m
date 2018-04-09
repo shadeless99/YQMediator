@@ -213,6 +213,10 @@ static NSMutableDictionary<NSString *, id<YQConnectorProtocol>> *connectorMap = 
     return targetObj;
 }
 
++ (NSDictionary *)registeredConnectors {
+    return connectorMap;
+}
+
 /**
  * 从url获取query参数放入到参数列表中
  */

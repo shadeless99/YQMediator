@@ -60,4 +60,7 @@ typedef void(^YQConnectorDidConnectBlock)(id _Nullable returnVal,BOOL isConnecte
                  withParameters:(nullable NSDictionary *)params
                       withBlock:(nullable YQConnectorDidConnectBlock)didConnectBlock;
 
+/** 获取全部注册的组件 */
++ (NSDictionary *)registeredConnectors;
+
 @end
